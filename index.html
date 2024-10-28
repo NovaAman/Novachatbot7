@@ -9,19 +9,25 @@
 <body>
 
     <div id="loader">
-        <video autoplay loop muted>
+        <video id="video" autoplay  muted>
             <source src="./asset/Final [3486562].mp4" type="video/mp4">
         </video>
 
         <script>
-            window.addEventListener('load', function(){
-                document.getElementById('loader').style.display='none';
+            const intro = document.getElementById('video');
+            const main2 = document.getElementsByClassName('chat-container');
+            const video = document.querySelector('video');
+
+            video.addEventListener('ended',function(){
+                intro.remove();
+                main2.style.display= 'flex';
             });
+
         </script>
     </div>
 
 
-    <div class="chat-container">
+    <div id="main" class="chat-container">
         <div class="chat-header">
             <h1>Nova Chatbot</h1>
         </div>
