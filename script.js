@@ -134,7 +134,7 @@ async function handleUserInput() {
             console.error('Error:', error);
             // Logs any error that occurs during the bot response.
 
-            addMessage('are you idiot check your internet.', false);
+            addMessage('አንቺ ፍየል 🐐 ኔትዎርክሽን አብሪው መላጣ.', false);
             // Displays an error message in the chat if something goes wrong.
         } finally {
             sendButton.disabled = false;
